@@ -23,11 +23,11 @@
   <a href="#license">License</a>
 </p>
 
-<h2 id="what-it-does"><img src="assets/headings/what-it-does.svg" alt="What it does" height="34"></h2>
+<h2 id="what-it-does"><a href="#what-it-does"><img src="assets/headings/what-it-does.svg" alt="What it does" height="34"></a></h2>
 
 descry handles the first pass of a CTF cipher challenge: it identifies encodings, removes layered transformations, and ranks Caesar, Vigenere, and XOR candidates by how much the output looks like English. It reads from an argument, a file, or standard input, and it prints plain text when piped so the output composes with other shell tools. Every candidate from every command is scored with the same English model, which keeps rankings comparable across commands. It does not attack modern cryptography, and it does not guess languages other than English.
 
-<h2 id="demo"><img src="assets/headings/demo.svg" alt="Demo" height="34"></h2>
+<h2 id="demo"><a href="#demo"><img src="assets/headings/demo.svg" alt="Demo" height="34"></a></h2>
 
 <div align="center">
   <img src="assets/crack.png" alt="Terminal output from a descry crack run" width="672">
@@ -48,7 +48,7 @@ $ descry crack "S2hvb3IgWnJ1b2c="
 
 </details>
 
-<h2 id="install"><img src="assets/headings/install.svg" alt="Install" height="34"></h2>
+<h2 id="install"><a href="#install"><img src="assets/headings/install.svg" alt="Install" height="34"></a></h2>
 
 Requires Python 3.9 or newer. The preferred method on every platform is pipx, which installs the tool in its own environment:
 
@@ -253,7 +253,7 @@ python3 -m pip uninstall descry
 
 </details>
 
-<h3 id="install-from-source"><img src="assets/headings/install-from-source.svg" alt="Install from source" height="30"></h3>
+<h3 id="install-from-source"><a href="#install-from-source"><img src="assets/headings/install-from-source.svg" alt="Install from source" height="30"></a></h3>
 
 ```console
 git clone https://github.com/zer0k7/descry.git
@@ -263,7 +263,7 @@ python -m pip install .
 
 On Windows, use `py -m pip install .` for the last command.
 
-<h3 id="development-install"><img src="assets/headings/development-install.svg" alt="Development install" height="30"></h3>
+<h3 id="development-install"><a href="#development-install"><img src="assets/headings/development-install.svg" alt="Development install" height="30"></a></h3>
 
 ```console
 git clone https://github.com/zer0k7/descry.git
@@ -271,14 +271,14 @@ cd descry
 python -m pip install -e .
 ```
 
-<h3 id="troubleshooting"><img src="assets/headings/troubleshooting.svg" alt="Troubleshooting" height="30"></h3>
+<h3 id="troubleshooting"><a href="#troubleshooting"><img src="assets/headings/troubleshooting.svg" alt="Troubleshooting" height="30"></a></h3>
 
 * `descry: command not found`: open a new terminal after `pipx ensurepath`, then check that `~/.local/bin` or the Python `Scripts` directory is on PATH.
 * PATH not updated: run `pipx ensurepath` again, restart the shell, and confirm the entry with `pipx list`.
 * Wrong Python version: check `py --version` or `python3 --version`. Install Python 3.9 or newer, then point pipx at the right interpreter with `pipx install --python python3.12 git+https://github.com/zer0k7/descry.git`.
 * `externally-managed-environment`: use pipx or a virtual environment instead of the system pip.
 
-<h2 id="quick-start"><img src="assets/headings/quick-start.svg" alt="Quick start" height="34"></h2>
+<h2 id="quick-start"><a href="#quick-start"><img src="assets/headings/quick-start.svg" alt="Quick start" height="34"></a></h2>
 
 ```console
 $ descry caesar enc "Hello World" --shift 3
@@ -300,7 +300,7 @@ $ descry xor crack "162a2762312721302736622f273131232527622b31622a2b2626272c622a
 1  0x42   78.6  The secret message is hidden here.
 ```
 
-<h2 id="commands"><img src="assets/headings/commands.svg" alt="Commands" height="34"></h2>
+<h2 id="commands"><a href="#commands"><img src="assets/headings/commands.svg" alt="Commands" height="34"></a></h2>
 
 | Command | Purpose | Example |
 | --- | --- | --- |
@@ -462,7 +462,7 @@ descry freq -f cipher.txt --format json
 
 </details>
 
-<h2 id="how-it-works"><img src="assets/headings/how-it-works.svg" alt="How it works" height="34"></h2>
+<h2 id="how-it-works"><a href="#how-it-works"><img src="assets/headings/how-it-works.svg" alt="How it works" height="34"></a></h2>
 
 Every candidate is scored with the same English model. The model runs chi-squared against standard English letter frequencies, then adds bonuses for common words, bigrams, and trigrams, with printable text and letter density checks to reject binary output. Confidence maps the raw score to a 0 to 100 range with `100 * sqrt(raw / 100)`, so near ties stay close and clearly readable text lands in the 70 to 90 range.
 
@@ -480,7 +480,7 @@ Caesar cracking applies the model to all 26 shifts. Vigenere cracking uses index
 
 </details>
 
-<h2 id="limitations"><img src="assets/headings/limitations.svg" alt="Limitations" height="34"></h2>
+<h2 id="limitations"><a href="#limitations"><img src="assets/headings/limitations.svg" alt="Limitations" height="34"></a></h2>
 
 * English text only. Other languages score poorly.
 * Vigenere and repeating-key XOR need a few hundred letters to recover a key reliably.
@@ -488,7 +488,7 @@ Caesar cracking applies the model to all 26 shifts. Vigenere cracking uses index
 * Encoding detection can flag plausible but wrong transformations on arbitrary strings.
 * Confidence is a heuristic, not a proof. Read the top result before trusting it.
 
-<h2 id="testing"><img src="assets/headings/testing.svg" alt="Testing" height="34"></h2>
+<h2 id="testing"><a href="#testing"><img src="assets/headings/testing.svg" alt="Testing" height="34"></a></h2>
 
 ```console
 python -m unittest discover -s tests -v
@@ -496,11 +496,11 @@ python -m unittest discover -s tests -v
 
 The suite covers cipher round trips, cracker samples, scoring order, decoding layers, and CLI exit codes.
 
-<h2 id="contributing"><img src="assets/headings/contributing.svg" alt="Contributing" height="34"></h2>
+<h2 id="contributing"><a href="#contributing"><img src="assets/headings/contributing.svg" alt="Contributing" height="34"></a></h2>
 
 Open an issue for bugs or missing cipher support. Pull requests should keep the standard library only rule and include tests for new behavior. Run the test suite and `python -m pyflakes descry tests` before submitting. Keep each change focused.
 
-<h2 id="license"><img src="assets/headings/license.svg" alt="License" height="34"></h2>
+<h2 id="license"><a href="#license"><img src="assets/headings/license.svg" alt="License" height="34"></a></h2>
 
 Released under the [MIT License](LICENSE).
 
