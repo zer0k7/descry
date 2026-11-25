@@ -1,14 +1,27 @@
 <div align="center">
-
-# descry
-
-Identify, decode, and crack classical ciphers from the command line.
-
-<img alt="Python 3.9+" src="https://img.shields.io/badge/python-3.9%2B-0F766E?style=flat-square&logo=python&logoColor=white"> <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-0F766E?style=flat-square"> <img alt="31 tests passing" src="https://img.shields.io/badge/tests-31%20passing-0F766E?style=flat-square"> <img alt="Zero dependencies" src="https://img.shields.io/badge/dependencies-0-0F766E?style=flat-square"> <img alt="Windows, macOS, and Linux" src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-0F766E?style=flat-square&logo=linux&logoColor=white">
-
-[What it does](#what-it-does) | [Demo](#demo) | [Install](#install) | [Quick start](#quick-start) | [Commands](#commands) | [How it works](#how-it-works) | [Limitations](#limitations) | [Testing](#testing) | [Contributing](#contributing) | [License](#license)
-
+  <a href="https://github.com/zer0k7/descry">
+    <img src="assets/banner.svg" alt="descry" width="100%">
+  </a>
 </div>
+
+<p align="center">Identify, decode, and crack classical ciphers from the command line.</p>
+
+<p align="center">
+  <img alt="Python 3.9+" src="https://img.shields.io/badge/python-3.9%2B-0F766E?style=flat-square&logo=python&logoColor=white"> <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-0F766E?style=flat-square"> <img alt="31 tests passing" src="https://img.shields.io/badge/tests-31%20passing-0F766E?style=flat-square"> <img alt="Zero dependencies" src="https://img.shields.io/badge/dependencies-0-0F766E?style=flat-square"> <img alt="Windows, macOS, and Linux" src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-0F766E?style=flat-square&logo=linux&logoColor=white">
+</p>
+
+<p align="center">
+  <a href="#what-it-does">What it does</a> |
+  <a href="#demo">Demo</a> |
+  <a href="#install">Install</a> |
+  <a href="#quick-start">Quick start</a> |
+  <a href="#commands">Commands</a> |
+  <a href="#how-it-works">How it works</a> |
+  <a href="#limitations">Limitations</a> |
+  <a href="#testing">Testing</a> |
+  <a href="#contributing">Contributing</a> |
+  <a href="#license">License</a>
+</p>
 
 ## What it does
 

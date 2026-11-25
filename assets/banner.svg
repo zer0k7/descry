@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="280" viewBox="0 0 1280 280" role="img" aria-labelledby="bannerTitle bannerDesc">
+  <title id="bannerTitle">descry</title>
+  <desc id="bannerDesc">descry banner: classical cipher analysis and cracking for CTFs</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1220"/>
+      <stop offset="0.55" stop-color="#0C1B22"/>
+      <stop offset="1" stop-color="#0F2E2B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2DD4BF"/>
+      <stop offset="0.6" stop-color="#5EEAD4"/>
+      <stop offset="1" stop-color="#4ADE80"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2DD4BF"/>
+      <stop offset="1" stop-color="#4ADE80"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#5EEAD4" opacity="0.10"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.18" cy="0.4" r="0.65">
+      <stop offset="0" stop-color="#2DD4BF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#2DD4BF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="280" fill="url(#background)"/>
+  <rect width="1280" height="280" fill="url(#dots)"/>
+  <rect width="1280" height="280" fill="url(#glow)"/>
+  <text x="80" y="130" fill="#F8FAFC" font-family="Segoe UI, system-ui, -apple-system, Helvetica Neue, Arial, sans-serif" font-size="88" font-weight="700" letter-spacing="-2">descry</text>
+  <text x="84" y="174" fill="#99F6E4" font-family="Segoe UI, system-ui, -apple-system, Helvetica Neue, Arial, sans-serif" font-size="22">classical cipher analysis and cracking for CTFs</text>
+  <text x="84" y="220" fill="#94A3B8" font-family="Cascadia Mono, Consolas, Liberation Mono, Menlo, monospace" font-size="15" letter-spacing="0.6" xml:space="preserve">python 3.9+   |   standard library only   |   MIT license</text>
+  <g>
+    <rect x="730" y="56" width="470" height="168" rx="16" fill="#081216" stroke="#1E3A38" stroke-width="1.5"/>
+    <text x="756" y="98" fill="#5EEAD4" font-family="Cascadia Mono, Consolas, Liberation Mono, Menlo, monospace" font-size="16">$ descry crack "Khoor Zruog"</text>
+    <text x="756" y="134" fill="#E2E8F0" font-family="Cascadia Mono, Consolas, Liberation Mono, Menlo, monospace" font-size="16" xml:space="preserve">1  caesar shift 3   77.2  Hello World</text>
+    <rect x="756" y="158" width="360" height="8" rx="4" fill="#16232B"/>
+    <rect x="756" y="158" width="278" height="8" rx="4" fill="url(#bar)"/>
+    <text x="1136" y="166" fill="#94A3B8" font-family="Cascadia Mono, Consolas, Liberation Mono, Menlo, monospace" font-size="13">77.2</text>
+    <text x="756" y="198" fill="#64748B" font-family="Cascadia Mono, Consolas, Liberation Mono, Menlo, monospace" font-size="12" xml:space="preserve">caesar shift 3   |   english score</text>
+  </g>
+  <rect x="0" y="272" width="1280" height="8" fill="url(#accent)"/>
+</svg>

@@ -2,6 +2,7 @@
 
 Screenshots used by the project README:
 
+* `banner.svg` is the README header banner.
 * `crack.png` shows a crack run in a terminal.
 * `help.png` shows the command overview printed by `descry`.
 * `decode.png` shows a base64 decode session.
